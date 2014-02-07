@@ -1,0 +1,26 @@
+\documentclass[12pt,a4paper,oneside,draft]{article}
+\usepackage{graphicx}
+
+\begin{document}
+\title{Assignment 1: CS 7641}
+\author{Matthew Kirk}
+
+\maketitle
+
+\begin{abstract}
+The abstract text goes here.
+\end{abstract}
+
+\section{Introduction}
+Here is the text of your introduction.
+
+\section{Decision trees with pruning}
+
+\section{Neural Networks}
+\section{Boosting}
+\section{Support Vector Machines}
+\section{K-Nearest Neighbors}
+\section{Conclusion}
+Write your conclusion here.
+
+\end{document}

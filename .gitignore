@@ -1,0 +1,5 @@
+docs/*
+*.aux
+*.log
+*.pdf
+.DS_Store
