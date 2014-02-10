@@ -1,12 +1,12 @@
-java_import 'weka.classifiers.functions.MultilayerPerceptron'
+java_import 'weka.classifiers.trees.J48'
 
-class NeuralNetwork
+class J48Tree
   include CrossValidation
 
   def initialize(file, class_name)
-    @classifier = MultilayerPerceptron.new
     @instances = CSVFile.load(file)
     @instances.class = @instances.enumerate_attributes.detect {|a| a.name == class_name}
+    @classifier = J48.new
     @folds = 10
   end
 end
