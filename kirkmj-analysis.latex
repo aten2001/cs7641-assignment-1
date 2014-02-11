@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,oneside,draft]{article}
+\documentclass[12pt,a4paper,oneside]{article}
 \usepackage{graphicx}
 \usepackage{verbatim}
 \usepackage{color}
@@ -83,7 +83,7 @@ Graphic here showing histograms of all attributes
 The data is predominantly a continuous variable set full of ordinal attributes. On top of the attributes the data is split into two pieces, Red and White for Red and White wine. 
 
 Looking at what the underlining data actually looks like it's interesting
-\includegraphics[scale=0.2]{assets/wine_distribution.eps}
+\includegraphics[scale=0.5]{wine_distribution.png}
 
 \section{Decision trees with pruning}
 \section{Neural Networks}

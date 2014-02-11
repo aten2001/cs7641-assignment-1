@@ -7,5 +7,8 @@ latex: charts ;
 	pdflatex kirkmj-analysis.latex
 preview: latex ;
 	open kirkmj-analysis.pdf
+preview_charts: charts ;
+	open assets/*.png
 clean:
 	rm $(assignment_output) 
+	find . -name kirkmj\* | grep -v latex | xargs rm
