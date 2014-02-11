@@ -1,5 +1,4 @@
 java_import 'weka.classifiers.functions.MultilayerPerceptron'
-
 class NeuralNetwork
   include CrossValidation
 
@@ -7,6 +6,5 @@ class NeuralNetwork
     @classifier = MultilayerPerceptron.new
     @instances = CSVFile.load(file)
     @instances.class = @instances.enumerate_attributes.detect {|a| a.name == class_name}
-    @folds = 10
   end
 end

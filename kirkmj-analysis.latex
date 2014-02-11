@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,oneside,draft]{article}
 \usepackage{graphicx}
-
+\usepackage{verbatim}
 \begin{document}
 \title{Assignment 1: CS 7641}
 \author{Matthew Kirk}
@@ -8,14 +8,96 @@
 \maketitle
 
 \begin{abstract}
-The abstract text goes here.
+  WRITE LAST...
 \end{abstract}
 
-\section{Introduction}
-Here is the text of your introduction.
+\section*{Introduction}
+As an avid food lover I have grown a special affinity towards mushrooms and wine. Between mushrooms like Morrels, chantrelles, boletes, I love mushrooms. Though while I live in the Northwest where we have a plethora of mushrooms to be had in the forest I don't know much about mycology. All I know is that if I pick the wrong one in the woods I'll probably end up dead.
 
+Wine isn't as dangerous to consume but the one thing that always bothers me is that when we're at a store buying wine is usually an uneducated guess. Sometimes you can end up with a 10 dollar bottle of wine that tastes better than the 100. But unless you drink all of the bottles in between how would you know the difference. Sure there's Robert Parker and his wine ratings, but sometimes when I've enjoyed a 95 Point wine I've been less than impressed. Plus their rating system is highly skewed and doesn't ever go very low.
+
+That is why I have decided to apply supervised learning algorithms to mushroom picking in the forest and wine selection. More specifically we want to figure out what mushrooms are poisonous and what the characteristics look like so that we don't end up dead. On top of that to enjoy with our mushrooms we want to be able to make educated guesses as to what kind of wines are good at the chemical level. Namely how do we pick an above average wine.
+
+\section*{Data acquisition}
+
+As they say \'data is the new bacon\' and in this case we need some data to solve this problem inductively. There are many sources of data on the internet and one of the best is the UCI Machine Learning Repository where I selected two data sets from two separate studies.
+
+\subsection*{Mushroom Data Set}
+The first data set which we'll use to determine whether mushrooms are poisonous or not comes from http://archive.ics.uci.edu/ml/datasets/Mushroom. This data set contains 8124 instances and 22 attributes. All of the attributes are categorical and have the following possible values:
+\begin{table}[h]\footnotesize
+  \caption{Mushroom Attribute Summary}
+
+    \begin{tabular}{ | l | p{10cm} | }
+      \hline
+      cap-shape & bell=b, conical=c, convex=x, flat=f,  knobbed=k, sunken=s  \\
+      cap-surface & fibrous=f, grooves=g, scaly=y, smooth=s \\
+      cap-color & brown=n, buff=b, cinnamon=c, gray=g, green=r, pink=p, purple=u, red=e, white=w, yellow=y \\
+      bruises? & bruises=t, no=f \\
+      odor & almond=a, anise=l, creosote=c, fishy=y, foul=f,  musty=m, none=n, pungent=p, spicy=s \\
+      gill-attachment & attached=a, descending=d, free=f, notched=n \\
+      gill-spacing & close=c, crowded=w, distant=d  \\
+      gill-size & broad=b,  narrow=n \\
+      gill-color & black=k, brown=n, buff=b, chocolate=h, gray=g,  green=r, orange=o, pink=p, purple=u, red=e,  white=w, yellow=y  \\
+      stalk-shape & enlarging=e, tapering=t \\
+      stalk-root &  bulbous=b, club=c, cup=u, equal=e,  rhizomorphs=z, rooted=r, missing=? \\
+      stalk-surface-above-ring & fibrous=f, scaly=y, silky=k, smooth=s \\
+      stalk-surface-below-ring & fibrous=f, scaly=y, silky=k, smooth=s \\
+      stalk-color-above-ring & brown=n, buff=b, cinnamon=c, gray=g, orange=o,  pink=p, red=e, white=w, yellow=y \\
+      stalk-color-below-ring & brown=n, buff=b, cinnamon=c, gray=g, orange=o,  pink=p, red=e, white=w, yellow=y \\
+      veil-type & partial=p, universal=u \\
+      veil-color & brown=n, orange=o, white=w, yellow=y  \\
+      ring-number & none=n, one=o, two=t \\
+      ring-type & cobwebby=c, evanescent=e, flaring=f, large=l,  none=n, pendant=p, sheathing=s, zone=z \\
+      spore-print-color &  black=k, brown=n, buff=b, chocolate=h, green=r,  orange=o, purple=u, white=w, yellow=y  \\
+      population &  abundant=a, clustered=c, numerous=n,  scattered=s, several=v, solitary=y \\
+      habitat & grasses=g, leaves=l, meadows=m, paths=p,  urban=u, waste=w, woods=d\\
+      \hline
+  \end{tabular}
+\end{table}
+
+\subsection*{Wine Data Set}
+
+\begin{table}[h]\footnotesize
+  \caption{Wine Attribute Summary}
+    \begin{tabular}{|l|p{10cm}|}
+      \hline
+      attribute name & \\
+      fixed acidity &  \\
+      volatile acidity & continuous \\
+      citric acid & continuous \\
+      residual sugar & continuous \\
+      chlorides & continuous \\
+      free sulfur dioxide & continuous \\
+      total sulfur dioxide & \\
+      density & \\
+      pH & scale from 1 to 14 \\
+      sulphates & continuous \\
+      alcohol & percentage (0 to 1) \\
+      quality & score between 0 and 10\\
+      \hline
+    \end{tabular}
+\end{table}
+
+Graphic here showing histograms of all attributes
+\begin{comment}
+# 3 by 12
+# R Code to make histogram
+
+par(mfrow=c(3,12))
+wh <- winequality.white
+re <- winequality.red
+to <- rbind(wh,re)
+
+hist(re$fixed.acidity)
+hist(wh$fixed.acidity)
+hist(to$fixed.acidity)
+
+\end{comment}
+
+The data is predominantly a continuous variable set full of ordinal attributes. On top of the attributes the data is split into two pieces, Red and White for Red and White wine. 
+
+Looking at what the underlining data actually looks like it's interesting
 \section{Decision trees with pruning}
-
 \section{Neural Networks}
 \section{Boosting}
 \section{Support Vector Machines}

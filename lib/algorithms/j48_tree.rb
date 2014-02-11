@@ -7,6 +7,5 @@ class J48Tree
     @instances = CSVFile.load(file)
     @instances.class = @instances.enumerate_attributes.detect {|a| a.name == class_name}
     @classifier = J48.new
-    @folds = 10
   end
 end
