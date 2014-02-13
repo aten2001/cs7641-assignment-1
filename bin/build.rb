@@ -4,11 +4,11 @@ mushrooms = './data/agaricus-lepiota/agaricus-lepiota.csv'
 wine = './data/wine_data/winequality.csv'
 
 class Analysis
-  ALGORITHMS = [J48Tree, KNearestNeighbor, SupportVectorMachine, AdaBoost]
+  ALGORITHMS = [AdaBoost]
   def initialize(file_hash)
     @files = file_hash.keys
     @instances = file_hash.map do |file, class_name|
-      instances = CSVFile.load(f)
+      instances = CSVFile.load(file)
       instances.class = instances.enumerate_attributes.detect {|a| a.name == class_name}
       instances
     end
@@ -39,3 +39,5 @@ analysis = Analysis.new({
   './data/agaricus-lepiota/agaricus-lepiota.csv' => 'class',
   './data/wine_data/winequality.csv' => 'above_average'
 })
+
+analysis.run_all!
