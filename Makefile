@@ -1,4 +1,6 @@
 assignment_output = docs/assignment.html
+all: latex ;
+	echo 'Finished build'
 markdown:
 	markdown ASSIGNMENT.md > $(assignment_output) 
 charts:

@@ -1,8 +1,24 @@
+combine <- function(aa, ba) {
+  t <- c(aa, ba)
+  names <- sort(names(t))
+  end <- 2 * length(names)
+  mat <- matrix(c(1:end),ncol=length(names),byrow=TRUE)
+  colnames(mat) <- names
+  rownames(mat) <- c('above average', 'below average')
+
+  for (n in 1:length(names)) {
+    mat[1,n] = aa[names[n]]
+    mat[2,n] = ba[names[n]]
+  }  
+
+  mat[is.na(mat)] <- 0
+
+  return(mat)
+}
 plothist <- function(below_average, above_average, column) {
-  plotdata = table(data[column][,1])
   below_average_counts <- table(below_average[column][,1])
   above_average_counts <- table(above_average[column][,1])
-  counts <- table(below_average_counts, above_average_counts)
+  counts <- combine(above_average_counts, below_average_counts) 
   barplot(counts, main=paste("Distribution of ", column), col=c('green', 'red'))
 }
 
