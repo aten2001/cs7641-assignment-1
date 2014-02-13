@@ -1,4 +1,5 @@
 require 'java'
+require 'yaml'
 
 require_relative '../vendor/libsvm.jar'
 require_relative '../vendor/weka.jar'

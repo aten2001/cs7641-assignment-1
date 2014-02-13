@@ -33,8 +33,4 @@ class KNearestNeighbor
 
     @classifier.nearest_neighbour_search_algorithm = kd_tree
   end
-
-  def weighting=(weighting_scheme)
-
-  end
 end
