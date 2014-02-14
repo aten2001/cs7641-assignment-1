@@ -1,4 +1,5 @@
 assignment_output = docs/assignment.html
+jruby_path = vendor/jruby-bin-1.7.10.tar.gz
 all: latex ;
 	echo 'Finished build'
 markdown:
@@ -14,3 +15,5 @@ preview_charts: charts ;
 clean:
 	rm $(assignment_output) 
 	find . -name kirkmj\* | grep -v latex | xargs rm
+setup_jruby:
+	tar -xzvf $(jruby_path)
