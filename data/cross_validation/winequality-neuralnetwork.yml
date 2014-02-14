@@ -1,0 +1,81 @@
+---
+- :dataset: winequality
+  :folds: 5
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.22035569052792
+  :relative_absolute_error: 71.30741728670162
+  :root_mean_squared_error: 0.42037556933983855
+  :mean_absolute_error: 0.33129441618726047
+  :kappa_statistic: 0.43644797302173766
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1471.0
+    - 913.0
+  - - 766.0
+    - 3347.0
+  :training_time: 100
+- :dataset: winequality
+  :folds: 5
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.46845578165048
+  :relative_absolute_error: 70.59274851691777
+  :root_mean_squared_error: 0.42157133627100046
+  :mean_absolute_error: 0.3279740635246355
+  :kappa_statistic: 0.43899887984114483
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1505.0
+    - 879.0
+  - - 803.0
+    - 3310.0
+  :training_time: 200
+- :dataset: winequality
+  :folds: 5
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.14392023319593
+  :relative_absolute_error: 70.27491512402979
+  :root_mean_squared_error: 0.4248268693531486
+  :mean_absolute_error: 0.3264974088882983
+  :kappa_statistic: 0.41902858386751857
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1459.0
+    - 925.0
+  - - 811.0
+    - 3302.0
+  :training_time: 300
+- :dataset: winequality
+  :folds: 5
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.4480858514766
+  :relative_absolute_error: 70.21575052581146
+  :root_mean_squared_error: 0.4262928550619437
+  :mean_absolute_error: 0.32622253003597795
+  :kappa_statistic: 0.41751091013815683
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1458.0
+    - 926.0
+  - - 815.0
+    - 3298.0
+  :training_time: 400
+- :dataset: winequality
+  :folds: 5
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.68067077893868
+  :relative_absolute_error: 70.23444239431909
+  :root_mean_squared_error: 0.42741384362622625
+  :mean_absolute_error: 0.3263093724978187
+  :kappa_statistic: 0.41422623000245185
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1459.0
+    - 925.0
+  - - 828.0
+    - 3285.0
+  :training_time: 500

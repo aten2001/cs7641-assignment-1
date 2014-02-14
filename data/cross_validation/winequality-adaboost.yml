@@ -1,0 +1,73 @@
+---
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.83589772004758
+  :relative_absolute_error: 78.44023303480105
+  :root_mean_squared_error: 0.4281619902398111
+  :mean_absolute_error: 0.3644334937047769
+  :kappa_statistic: 0.39325533115159955
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1314.0
+    - 1070.0
+  - - 702.0
+    - 3411.0
+  weight_threshold: 100
+  use_resampling: false
+  num_iterations: 10
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.64070930889162
+  :relative_absolute_error: 74.97312681018055
+  :root_mean_squared_error: 0.4224015458477845
+  :mean_absolute_error: 0.3483253106257765
+  :kappa_statistic: 0.4196393751968903
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1391.0
+    - 993.0
+  - - 716.0
+    - 3397.0
+  weight_threshold: 100
+  use_resampling: false
+  num_iterations: 100
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.22605386765761
+  :relative_absolute_error: 73.77893110880349
+  :root_mean_squared_error: 0.4204030328193914
+  :mean_absolute_error: 0.3427770747934456
+  :kappa_statistic: 0.43867905366165694
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1442.0
+    - 942.0
+  - - 719.0
+    - 3394.0
+  weight_threshold: 100
+  use_resampling: false
+  num_iterations: 500
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.15561922618535
+  :relative_absolute_error: 73.40613271914907
+  :root_mean_squared_error: 0.4200635592839336
+  :mean_absolute_error: 0.3410450526622901
+  :kappa_statistic: 0.4335403199717251
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1431.0
+    - 953.0
+  - - 722.0
+    - 3391.0
+  weight_threshold: 100
+  use_resampling: false
+  num_iterations: 1000

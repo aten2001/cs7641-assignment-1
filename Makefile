@@ -5,7 +5,7 @@ markdown:
 	markdown ASSIGNMENT.md > $(assignment_output) 
 charts:
 	r < ./lib/charts.r --vanilla
-latex: charts ;
+latex:
 	pdflatex kirkmj-analysis.latex
 preview: latex ;
 	open kirkmj-analysis.pdf

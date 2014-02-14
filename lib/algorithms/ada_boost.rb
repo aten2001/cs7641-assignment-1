@@ -11,20 +11,32 @@ class AdaBoost
 
   def initialize(instances)
     @classifier = AdaBoostM1.new
-    @instances = CSVFile.load(file)
+    @instances = instances
+  end
+
+  def summary_data
+    Hash[%w[weight_threshold use_resampling num_iterations].map do |k|
+      [k, @classifier.send(k)]
+    end]
   end
 
   def each(&block)
-    90.step(100, 2).to_a.reverse.each do |weight_mass_percentage|
-      [true, false].each do |resampling|
-        [10, 100, 1000, 10000].each do |iterations|
-          adaboost = AdaBoost.new(@instances)
-          adaboost.num_iterations = iterations
-          adaboost.use_resampling = resampling
-          adaboost.weight_threshold = weight_mass_percentage
+    [10, 100, 500, 1000, 5000, 10000].each do |iterations|
+      adaboost = AdaBoost.new(@instances)
+      adaboost.num_iterations = iterations
 
-          yield adaboost
-        end
+      yield adaboost
+    end
+  end
+
+  def self.important_parts(cross_validation_data)
+    yml = YAML::load_file(cross_validation_data)
+
+    CSV.open("./data/supporting/#{File.basename(cross_validation_data, '.yml')}.csv", 'wb') do |csv|
+      csv << %w[iterations root_mean_squared_error]
+
+      yml.each do |cv|
+        csv << [cv.fetch('num_iterations'), cv.fetch(:root_mean_squared_error)]
       end
     end
   end

@@ -4,8 +4,13 @@ mushrooms = './data/agaricus-lepiota/agaricus-lepiota.csv'
 wine = './data/wine_data/winequality.csv'
 
 class Analysis
-  ALGORITHMS = [AdaBoost]
-  def initialize(file_hash)
+  if ARGV.first.nil?
+    ALGORITHMS = [KNearestNeighbor, SVM, J48Tree, AdaBoost, NeuralNetwork]
+  else
+    ALGORITHMS = [Kernel.const_get(ARGV.first)]
+  end
+
+  def initialize(file_hash, algorithm = nil)
     @files = file_hash.keys
     @instances = file_hash.map do |file, class_name|
       instances = CSVFile.load(file)
@@ -29,14 +34,13 @@ class Analysis
       configured_algo.cross_validation
     end
 
-    File.open("./data/cross_validation/#{instances.relation_name}-j48.yml", "wb") do |f|
+    File.open("./data/cross_validation/#{instances.relation_name}-#{klass.name.downcase}.yml", "wb") do |f|
       f.write(YAML::dump(cv))
     end
   end
 end
 
 analysis = Analysis.new({
-  './data/agaricus-lepiota/agaricus-lepiota.csv' => 'class',
   './data/wine_data/winequality.csv' => 'above_average'
 })
 

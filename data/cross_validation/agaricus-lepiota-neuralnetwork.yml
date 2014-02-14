@@ -1,0 +1,81 @@
+---
+- :dataset: agaricus-lepiota
+  :folds: 5
+  :total_num_instances: 8124
+  :root_relative_squared_error: 20.109969376396673
+  :relative_absolute_error: 2.6833087995912517
+  :root_mean_squared_error: 0.10048487617413887
+  :mean_absolute_error: 0.013399215551475014
+  :kappa_statistic: 0.9790352053350051
+  :false_positives: 10.0
+  :false_negatives: 75.0
+  :confusion_matrix:
+  - - 3841.0
+    - 75.0
+  - - 10.0
+    - 4198.0
+  :training_time: 100
+- :dataset: agaricus-lepiota
+  :folds: 5
+  :total_num_instances: 8124
+  :root_relative_squared_error: 8.479835275537793
+  :relative_absolute_error: 0.964241308008339
+  :root_mean_squared_error: 0.04237177997096429
+  :mean_absolute_error: 0.004814979599667418
+  :kappa_statistic: 0.9955630318190258
+  :false_positives: 10.0
+  :false_negatives: 8.0
+  :confusion_matrix:
+  - - 3908.0
+    - 8.0
+  - - 10.0
+    - 4198.0
+  :training_time: 200
+- :dataset: agaricus-lepiota
+  :folds: 5
+  :total_num_instances: 8124
+  :root_relative_squared_error: 8.333703649711385
+  :relative_absolute_error: 0.871106622519294
+  :root_mean_squared_error: 0.04164159395966549
+  :mean_absolute_error: 0.0043499076234652595
+  :kappa_statistic: 0.9955630318190258
+  :false_positives: 10.0
+  :false_negatives: 8.0
+  :confusion_matrix:
+  - - 3908.0
+    - 8.0
+  - - 10.0
+    - 4198.0
+  :training_time: 300
+- :dataset: agaricus-lepiota
+  :folds: 5
+  :total_num_instances: 8124
+  :root_relative_squared_error: 8.259877125932487
+  :relative_absolute_error: 0.8234024781587249
+  :root_mean_squared_error: 0.04127269985737029
+  :mean_absolute_error: 0.004111694968595527
+  :kappa_statistic: 0.9955630318190258
+  :false_positives: 10.0
+  :false_negatives: 8.0
+  :confusion_matrix:
+  - - 3908.0
+    - 8.0
+  - - 10.0
+    - 4198.0
+  :training_time: 400
+- :dataset: agaricus-lepiota
+  :folds: 5
+  :total_num_instances: 8124
+  :root_relative_squared_error: 8.210942523832626
+  :relative_absolute_error: 0.7916648818658778
+  :root_mean_squared_error: 0.041028184943369156
+  :mean_absolute_error: 0.003953211944249491
+  :kappa_statistic: 0.9955630318190258
+  :false_positives: 10.0
+  :false_negatives: 8.0
+  :confusion_matrix:
+  - - 3908.0
+    - 8.0
+  - - 10.0
+    - 4198.0
+  :training_time: 500

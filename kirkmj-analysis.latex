@@ -13,18 +13,22 @@
 \end{abstract}
 
 \section*{Introduction}
-As an avid food lover I have grown a special affinity towards mushrooms and wine. Between mushrooms like Morrels, chantrelles, boletes, I love mushrooms. Though while I live in the Northwest where we have a plethora of mushrooms to be had in the forest I don't know much about mycology. All I know is that if I pick the wrong one in the woods I'll probably end up dead.
+As an avid food lover I have grown a special affinity towards mushrooms and wine. Between mushrooms like Morrels, Chantrelles, Boletes, I love mushrooms. I live in the Northwest where we have a plethora of mushrooms to be had in the forest I don't know much about mycology. All I know is that if I pick the wrong one in the woods I'll probably end up dead.
 
 Wine isn't as dangerous to consume but the one thing that always bothers me is that when we're at a store buying wine is usually an uneducated guess. Sometimes you can end up with a 10 dollar bottle of wine that tastes better than the 100. But unless you drink all of the bottles in between how would you know the difference. Sure there's Robert Parker and his wine ratings, but sometimes when I've enjoyed a 95 Point wine I've been less than impressed. Plus their rating system is highly skewed and doesn't ever go very low.
 
 That is why I have decided to apply supervised learning algorithms to mushroom picking in the forest and wine selection. More specifically we want to figure out what mushrooms are poisonous and what the characteristics look like so that we don't end up dead. On top of that to enjoy with our mushrooms we want to be able to make educated guesses as to what kind of wines are good at the chemical level. Namely how do we pick an above average wine.
 
+We will analyze mushrooms being poisonous or not and wine quality using various supervised learning methods. They include K Nearest Neighbors, Support Vector Machines, a Feed-forward Neural Network, AdaBoost, and a pruneable decision tree (in this case we'll use J48, or the java version of C4.5). But before we delve into the analysis portion we need to first acquire the data.
+
 \section*{Data acquisition}
 
-As they say \'data is the new bacon\' and in this case we need some data to solve this problem inductively. There are many sources of data on the internet and one of the best is the UCI Machine Learning Repository where I selected two data sets from two separate studies.
+The data that I am using is from the UCI Machine Learning repository. In this section I'll explain what the data are as well as whether there is any discernable analysis to be had from them on first glance.
 
 \subsection*{Mushroom Data Set}
-The first data set which we'll use to determine whether mushrooms are poisonous or not comes from http://archive.ics.uci.edu/ml/datasets/Mushroom. This data set contains 8124 instances and 22 attributes. All of the attributes are categorical and have the following possible values:
+
+The first data set comes from the Audubon Society Field Guide to North American Mushrooms (1981). In it there are 8124 instances of mushrooms being either poisonous or edible. The attributes extracted in this data set are listed below.
+
 \begin{table}[h]\footnotesize
   \caption{Mushroom Attribute Summary}
 
@@ -34,7 +38,7 @@ The first data set which we'll use to determine whether mushrooms are poisonous 
       cap-surface & fibrous=f, grooves=g, scaly=y, smooth=s \\
       cap-color & brown=n, buff=b, cinnamon=c, gray=g, green=r, pink=p, purple=u, red=e, white=w, yellow=y \\
       bruises? & bruises=t, no=f \\
-      odor & almond=a, anise=l, creosote=c, fishy=y, foul=f,  musty=m, none=n, pungent=p, spicy=s \\
+      odor & almond=a, anise=l, creosote=c, fishy=y, foul=f, musty=m, none=n, pungent=p, spicy=s \\
       gill-attachment & attached=a, descending=d, free=f, notched=n \\
       gill-spacing & close=c, crowded=w, distant=d  \\
       gill-size & broad=b,  narrow=n \\
@@ -56,40 +60,50 @@ The first data set which we'll use to determine whether mushrooms are poisonous 
   \end{tabular}
 \end{table}
 
+What is intriguing is that the distribution of attributes if mapped in histogram form with 'red' being poisonous and 'green' being edible.
+
+You can see that there is an obvious attribution of 'odor' to poisonousness. This makes the dataset intriguing and maybe able to actually grep some useful analysis out of.
+
+\includegraphics[scale=0.4]{assets/mushroom_distribution.png}
+
 \subsection*{Wine Data Set}
+
+The wine data set comes from a study done by Paulo Cortez at the University of Minho. This includes two data sets of the red and white variants of 'Vinho Verde' wine. These data sets came with 12 original attributes but we need to pre-process the data to better fit our classification problem. If you remember the problem is about classifying the above average wine and we have two data sets (red and white). To achieve this we added a new attribute 'red' which is simply a binary variable that is either 't' or 'f'. On top of that we took out quality which was in the original data set and used above\_average to denote any wine that received strictly greater than a 5 out of 10. In summary our data looks like this.
 
 \begin{table}[h]\footnotesize
   \caption{Wine Attribute Summary}
-    \begin{tabular}{|l|p{10cm}|}
+
+    \begin{tabular}{ | l | p{10cm} | }
       \hline
-      attribute name & \\
-      fixed acidity &  \\
-      volatile acidity & continuous \\
-      citric acid & continuous \\
-      residual sugar & continuous \\
-      chlorides & continuous \\
-      free sulfur dioxide & continuous \\
-      total sulfur dioxide & \\
-      density & \\
-      pH & scale from 1 to 14 \\
-      sulphates & continuous \\
-      alcohol & percentage (0 to 1) \\
-      quality & score between 0 and 10\\
-      \hline
-    \end{tabular}
+      red & true=t, false=f \\
+      fixed acidity & min=3.8, median=7, max=15.9\\
+      volatile acidity & min=0.08, median=0.29, max=1.58\\
+      citric acid & min=0, median=0.31, max=1.66\\
+      residual sugar & min=0.6, median=3, max=65.8 \\
+      chlorides & min=0.009, median=0.047, max=0.611\\
+      free sulfur dioxide & min=1, median=29, max=289\\
+      total sulfur dioxide & min=6, median=118, max=440\\
+      density & min=0.9871, median=0.9949, max=1.039\\
+      pH & min=2.72, median=3.21, max=4.01 \\
+      sulphates & min=0.22, median=0.51, max=2.0\\
+      alcohol & min=8, median=10.30, max=14.90 \\
+      above\_average (derrived from quality) & true=t, false=f \\
+     \hline
+  \end{tabular}
 \end{table}
 
-Graphic here showing histograms of all attributes
-The data is predominantly a continuous variable set full of ordinal attributes. On top of the attributes the data is split into two pieces, Red and White for Red and White wine. 
+Graphically the data doesn't tell us as much as the mushrooms did.
 
-Looking at what the underlining data actually looks like it's interesting
-\includegraphics[scale=0.5]{wine_distribution.png}
+\includegraphics[scale=0.4]{assets/wine_distribution.png}
+
+Now that we know a bit more about the data let's analyze it using some supervized learning methods!
 
 \section{Decision trees with pruning}
 \section{Neural Networks}
 \section{Boosting}
 \section{Support Vector Machines}
-\section{K-Nearest Neighbors}
+\msection{K-Nearest Neighbors}
+
 \section{Conclusion}
 Write your conclusion here.
 

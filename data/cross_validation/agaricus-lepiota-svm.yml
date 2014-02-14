@@ -1,0 +1,1189 @@
+---
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 85.41941796982488
+  :relative_absolute_error: 36.4823732192561
+  :root_mean_squared_error: 0.42682111926233285
+  :mean_absolute_error: 0.18217626784835056
+  :kappa_statistic: 0.6335658320508843
+  :false_positives: 492.0
+  :false_negatives: 988.0
+  :confusion_matrix:
+  - - 2928.0
+    - 988.0
+  - - 492.0
+    - 3716.0
+  :degree: 3
+  :cost: 3.0517578125e-05
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 76.94798539997862
+  :relative_absolute_error: 29.60495286238282
+  :root_mean_squared_error: 0.38449132567260746
+  :mean_absolute_error: 0.14783357951747908
+  :kappa_statistic: 0.7030004343161639
+  :false_positives: 420.0
+  :false_negatives: 781.0
+  :confusion_matrix:
+  - - 3135.0
+    - 781.0
+  - - 420.0
+    - 3788.0
+  :degree: 3
+  :cost: 0.000244140625
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 66.09104383934081
+  :relative_absolute_error: 21.840123427203313
+  :root_mean_squared_error: 0.33024169416242605
+  :mean_absolute_error: 0.10905957656326933
+  :kappa_statistic: 0.7808686897027405
+  :false_positives: 255.0
+  :false_negatives: 631.0
+  :confusion_matrix:
+  - - 3285.0
+    - 631.0
+  - - 255.0
+    - 3953.0
+  :degree: 3
+  :cost: 0.001953125
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 52.30849703789879
+  :relative_absolute_error: 13.680889957221037
+  :root_mean_squared_error: 0.26137348840908
+  :mean_absolute_error: 0.06831610044313147
+  :kappa_statistic: 0.8630418023191179
+  :false_positives: 216.0
+  :false_negatives: 339.0
+  :confusion_matrix:
+  - - 3577.0
+    - 339.0
+  - - 216.0
+    - 3992.0
+  :degree: 3
+  :cost: 0.015625
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 39.5949054469692
+  :relative_absolute_error: 7.838780191705026
+  :root_mean_squared_error: 0.1978466051586968
+  :mean_absolute_error: 0.03914327917282127
+  :kappa_statistic: 0.9216093949584974
+  :false_positives: 157.0
+  :false_negatives: 161.0
+  :confusion_matrix:
+  - - 3755.0
+    - 161.0
+  - - 157.0
+    - 4051.0
+  :degree: 3
+  :cost: 0.125
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 33.15722541090864
+  :relative_absolute_error: 5.497006235063587
+  :root_mean_squared_error: 0.16567900364899316
+  :mean_absolute_error: 0.02744953225012309
+  :kappa_statistic: 0.9450372247131466
+  :false_positives: 119.0
+  :false_negatives: 104.0
+  :confusion_matrix:
+  - - 3812.0
+    - 104.0
+  - - 119.0
+    - 4089.0
+  :degree: 3
+  :cost: 1.0
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 19.483685594054318
+  :relative_absolute_error: 1.8980694174883241
+  :root_mean_squared_error: 0.09735548064197028
+  :mean_absolute_error: 0.00947808961102905
+  :kappa_statistic: 0.9810272004483971
+  :false_positives: 62.0
+  :false_negatives: 15.0
+  :confusion_matrix:
+  - - 3901.0
+    - 15.0
+  - - 62.0
+    - 4146.0
+  :degree: 3
+  :cost: 8.0
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 64.0
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 512.0
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 4096.0
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 32768.0
+  :kernel: :linear
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 108.20754830470769
+  :relative_absolute_error: 58.54434891603597
+  :root_mean_squared_error: 0.5406881477038816
+  :mean_absolute_error: 0.29234367306745446
+  :kappa_statistic: 0.4038606729903049
+  :false_positives: 175.0
+  :false_negatives: 2200.0
+  :confusion_matrix:
+  - - 1716.0
+    - 2200.0
+  - - 175.0
+    - 4033.0
+  :degree: 2
+  :cost: 3.0517578125e-05
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 75.13261305769156
+  :relative_absolute_error: 28.22453874057313
+  :root_mean_squared_error: 0.3754203290136679
+  :mean_absolute_error: 0.14094042343673066
+  :kappa_statistic: 0.7155543949111588
+  :false_positives: 136.0
+  :false_negatives: 1009.0
+  :confusion_matrix:
+  - - 2907.0
+    - 1009.0
+  - - 136.0
+    - 4072.0
+  :degree: 3
+  :cost: 3.0517578125e-05
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 63.465364471338084
+  :relative_absolute_error: 20.139256027116375
+  :root_mean_squared_error: 0.3171217802914274
+  :mean_absolute_error: 0.10056622353520434
+  :kappa_statistic: 0.797204094570064
+  :false_positives: 18.0
+  :false_negatives: 799.0
+  :confusion_matrix:
+  - - 3117.0
+    - 799.0
+  - - 18.0
+    - 4190.0
+  :degree: 4
+  :cost: 3.0517578125e-05
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 60.888415213429
+  :relative_absolute_error: 18.536989635730126
+  :root_mean_squared_error: 0.30424535953506565
+  :mean_absolute_error: 0.09256523879862137
+  :kappa_statistic: 0.8134465926207856
+  :false_positives: 18.0
+  :false_negatives: 734.0
+  :confusion_matrix:
+  - - 3182.0
+    - 734.0
+  - - 18.0
+    - 4190.0
+  :degree: 5
+  :cost: 3.0517578125e-05
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 71.84542051139655
+  :relative_absolute_error: 25.80881402740617
+  :root_mean_squared_error: 0.3589949864488653
+  :mean_absolute_error: 0.12887740029542097
+  :kappa_statistic: 0.7405717297377422
+  :false_positives: 232.0
+  :false_negatives: 815.0
+  :confusion_matrix:
+  - - 3101.0
+    - 815.0
+  - - 232.0
+    - 3976.0
+  :degree: 2
+  :cost: 0.000244140625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 64.19909248237632
+  :relative_absolute_error: 20.607610818444662
+  :root_mean_squared_error: 0.32078804983936665
+  :mean_absolute_error: 0.10290497291974397
+  :kappa_statistic: 0.7925563888462632
+  :false_positives: 46.0
+  :false_negatives: 790.0
+  :confusion_matrix:
+  - - 3126.0
+    - 790.0
+  - - 46.0
+    - 4162.0
+  :degree: 3
+  :cost: 0.000244140625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 55.598044989644464
+  :relative_absolute_error: 15.455708113833495
+  :root_mean_squared_error: 0.27781060039136013
+  :mean_absolute_error: 0.07717872968980798
+  :kappa_statistic: 0.8446376095139435
+  :false_positives: 21.0
+  :false_negatives: 606.0
+  :confusion_matrix:
+  - - 3310.0
+    - 606.0
+  - - 21.0
+    - 4187.0
+  :degree: 4
+  :cost: 0.000244140625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 44.6289257065496
+  :relative_absolute_error: 9.958701878769906
+  :root_mean_squared_error: 0.223000442689437
+  :mean_absolute_error: 0.04972919743968488
+  :kappa_statistic: 0.9000747499384392
+  :false_positives: 11.0
+  :false_negatives: 393.0
+  :confusion_matrix:
+  - - 3523.0
+    - 393.0
+  - - 11.0
+    - 4197.0
+  :degree: 5
+  :cost: 0.000244140625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 69.11743913172118
+  :relative_absolute_error: 23.886094357742675
+  :root_mean_squared_error: 0.345363893033886
+  :mean_absolute_error: 0.11927621861152142
+  :kappa_statistic: 0.7600099067117974
+  :false_positives: 219.0
+  :false_negatives: 750.0
+  :confusion_matrix:
+  - - 3166.0
+    - 750.0
+  - - 219.0
+    - 3989.0
+  :degree: 2
+  :cost: 0.001953125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 46.68064894453134
+  :relative_absolute_error: 10.895411461426484
+  :root_mean_squared_error: 0.23325243023120715
+  :mean_absolute_error: 0.054406696208764156
+  :kappa_statistic: 0.890662231942196
+  :false_positives: 23.0
+  :false_negatives: 419.0
+  :confusion_matrix:
+  - - 3497.0
+    - 419.0
+  - - 23.0
+    - 4185.0
+  :degree: 3
+  :cost: 0.001953125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 37.35243924036767
+  :relative_absolute_error: 6.9760213655739705
+  :root_mean_squared_error: 0.18664151902069787
+  :mean_absolute_error: 0.03483505662235352
+  :kappa_statistic: 0.9300668934043096
+  :false_positives: 2.0
+  :false_negatives: 281.0
+  :confusion_matrix:
+  - - 3635.0
+    - 281.0
+  - - 2.0
+    - 4206.0
+  :degree: 4
+  :cost: 0.001953125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 36.07677548124879
+  :relative_absolute_error: 6.5076665742456825
+  :root_mean_squared_error: 0.18026732160270725
+  :mean_absolute_error: 0.03249630723781388
+  :kappa_statistic: 0.9347707394362427
+  :false_positives: 0.0
+  :false_negatives: 264.0
+  :confusion_matrix:
+  - - 3652.0
+    - 264.0
+  - - 0.0
+    - 4208.0
+  :degree: 5
+  :cost: 0.001953125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 44.07312661563883
+  :relative_absolute_error: 9.712199357018177
+  :root_mean_squared_error: 0.2202232428945224
+  :mean_absolute_error: 0.04849827671097981
+  :kappa_statistic: 0.902608754494621
+  :false_positives: 41.0
+  :false_negatives: 353.0
+  :confusion_matrix:
+  - - 3563.0
+    - 353.0
+  - - 41.0
+    - 4167.0
+  :degree: 2
+  :cost: 0.015625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 36.5519369275316
+  :relative_absolute_error: 6.680218339471893
+  :root_mean_squared_error: 0.18264159369625374
+  :mean_absolute_error: 0.033357951747907434
+  :kappa_statistic: 0.933038202341785
+  :false_positives: 1.0
+  :false_negatives: 270.0
+  :confusion_matrix:
+  - - 3646.0
+    - 270.0
+  - - 1.0
+    - 4207.0
+  :degree: 3
+  :cost: 0.015625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 34.966453881631836
+  :relative_absolute_error: 6.113262539442914
+  :root_mean_squared_error: 0.1747193007995561
+  :mean_absolute_error: 0.03052683407188577
+  :kappa_statistic: 0.9387327335801762
+  :false_positives: 0.0
+  :false_negatives: 248.0
+  :confusion_matrix:
+  - - 3668.0
+    - 248.0
+  - - 0.0
+    - 4208.0
+  :degree: 4
+  :cost: 0.015625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 34.61217469381244
+  :relative_absolute_error: 5.9900112785670485
+  :root_mean_squared_error: 0.17294904945541978
+  :mean_absolute_error: 0.029911373707533235
+  :kappa_statistic: 0.9399770213104419
+  :false_positives: 6.0
+  :false_negatives: 237.0
+  :confusion_matrix:
+  - - 3679.0
+    - 237.0
+  - - 6.0
+    - 4202.0
+  :degree: 5
+  :cost: 0.015625
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 35.31717934769965
+  :relative_absolute_error: 6.236513800318779
+  :root_mean_squared_error: 0.17647179501619603
+  :mean_absolute_error: 0.031142294436238307
+  :kappa_statistic: 0.9375645884510473
+  :false_positives: 63.0
+  :false_negatives: 190.0
+  :confusion_matrix:
+  - - 3726.0
+    - 190.0
+  - - 63.0
+    - 4145.0
+  :degree: 2
+  :cost: 0.125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 27.10309481654491
+  :relative_absolute_error: 3.672887574100783
+  :root_mean_squared_error: 0.13542791018732278
+  :mean_absolute_error: 0.018340718857705565
+  :kappa_statistic: 0.9632225611167777
+  :false_positives: 0.0
+  :false_negatives: 149.0
+  :confusion_matrix:
+  - - 3767.0
+    - 149.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 0.125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 28.52119528881584
+  :relative_absolute_error: 4.067291608903552
+  :root_mean_squared_error: 0.14251383099065745
+  :mean_absolute_error: 0.02031019202363368
+  :kappa_statistic: 0.9592769187751249
+  :false_positives: 13.0
+  :false_negatives: 152.0
+  :confusion_matrix:
+  - - 3764.0
+    - 152.0
+  - - 13.0
+    - 4195.0
+  :degree: 4
+  :cost: 0.125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 31.164406698011526
+  :relative_absolute_error: 4.856099678509088
+  :root_mean_squared_error: 0.15572134842560895
+  :mean_absolute_error: 0.024249138355489905
+  :kappa_statistic: 0.9513782464417483
+  :false_positives: 28.0
+  :false_negatives: 169.0
+  :confusion_matrix:
+  - - 3747.0
+    - 169.0
+  - - 28.0
+    - 4180.0
+  :degree: 5
+  :cost: 0.125
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 10.877557083381417
+  :relative_absolute_error: 0.591606052204153
+  :root_mean_squared_error: 0.0543526425198644
+  :mean_absolute_error: 0.0029542097488921715
+  :kappa_statistic: 0.9940826793332744
+  :false_positives: 0.0
+  :false_negatives: 24.0
+  :confusion_matrix:
+  - - 3892.0
+    - 24.0
+  - - 0.0
+    - 4208.0
+  :degree: 2
+  :cost: 1.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 12.946882564726282
+  :relative_absolute_error: 0.8381085739558833
+  :root_mean_squared_error: 0.06469258440963108
+  :mean_absolute_error: 0.004185130477597243
+  :kappa_statistic: 0.9916168318923131
+  :false_positives: 3.0
+  :false_negatives: 31.0
+  :confusion_matrix:
+  - - 3885.0
+    - 31.0
+  - - 3.0
+    - 4205.0
+  :degree: 3
+  :cost: 1.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 17.198927880991683
+  :relative_absolute_error: 1.4790151305103822
+  :root_mean_squared_error: 0.08593907360584258
+  :mean_absolute_error: 0.007385524372230428
+  :kappa_statistic: 0.985204862751002
+  :false_positives: 11.0
+  :false_negatives: 49.0
+  :confusion_matrix:
+  - - 3867.0
+    - 49.0
+  - - 11.0
+    - 4197.0
+  :degree: 4
+  :cost: 1.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 26.271796295576944
+  :relative_absolute_error: 3.451035304524226
+  :root_mean_squared_error: 0.13127410331771838
+  :mean_absolute_error: 0.017232890201871
+  :kappa_statistic: 0.9654639328022434
+  :false_positives: 28.0
+  :false_negatives: 112.0
+  :confusion_matrix:
+  - - 3804.0
+    - 112.0
+  - - 28.0
+    - 4180.0
+  :degree: 5
+  :cost: 1.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 2
+  :cost: 8.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 3.8457971882013817
+  :relative_absolute_error: 0.07395075652551912
+  :root_mean_squared_error: 0.019216561050602196
+  :mean_absolute_error: 0.00036927621861152144
+  :kappa_statistic: 0.9992605118549308
+  :false_positives: 3.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 3.0
+    - 4205.0
+  :degree: 3
+  :cost: 8.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 15.059295873178268
+  :relative_absolute_error: 1.1339116000579599
+  :root_mean_squared_error: 0.07524782622802687
+  :mean_absolute_error: 0.005662235352043328
+  :kappa_statistic: 0.9886584687221093
+  :false_positives: 11.0
+  :false_negatives: 35.0
+  :confusion_matrix:
+  - - 3881.0
+    - 35.0
+  - - 11.0
+    - 4197.0
+  :degree: 4
+  :cost: 8.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 20.47081875162871
+  :relative_absolute_error: 2.095271434889708
+  :root_mean_squared_error: 0.10228795722856678
+  :mean_absolute_error: 0.010462826193993106
+  :kappa_statistic: 0.9790407795152166
+  :false_positives: 25.0
+  :false_negatives: 60.0
+  :confusion_matrix:
+  - - 3856.0
+    - 60.0
+  - - 25.0
+    - 4183.0
+  :degree: 5
+  :cost: 8.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 2
+  :cost: 64.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 2.220372041856774
+  :relative_absolute_error: 0.024650252175173044
+  :root_mean_squared_error: 0.011094686695464057
+  :mean_absolute_error: 0.00012309207287050715
+  :kappa_statistic: 0.9997534952157316
+  :false_positives: 0.0
+  :false_negatives: 1.0
+  :confusion_matrix:
+  - - 3915.0
+    - 1.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 64.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 12.755066293067795
+  :relative_absolute_error: 0.8134583217807103
+  :root_mean_squared_error: 0.06373412276580526
+  :mean_absolute_error: 0.004062038404726735
+  :kappa_statistic: 0.9918653421191473
+  :false_positives: 16.0
+  :false_negatives: 17.0
+  :confusion_matrix:
+  - - 3899.0
+    - 17.0
+  - - 16.0
+    - 4192.0
+  :degree: 4
+  :cost: 64.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 19.983348376710964
+  :relative_absolute_error: 1.9966704261890162
+  :root_mean_squared_error: 0.09985218025917651
+  :mean_absolute_error: 0.009970457902511078
+  :kappa_statistic: 0.9800299276136316
+  :false_positives: 31.0
+  :false_negatives: 50.0
+  :confusion_matrix:
+  - - 3866.0
+    - 50.0
+  - - 31.0
+    - 4177.0
+  :degree: 5
+  :cost: 64.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 2
+  :cost: 512.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 5.438778541690708
+  :relative_absolute_error: 0.14790151305103824
+  :root_mean_squared_error: 0.0271763212599322
+  :mean_absolute_error: 0.0007385524372230429
+  :kappa_statistic: 0.9985209057698268
+  :false_positives: 0.0
+  :false_negatives: 6.0
+  :confusion_matrix:
+  - - 3910.0
+    - 6.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 512.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 13.687292506622713
+  :relative_absolute_error: 0.9367095826565756
+  :root_mean_squared_error: 0.06839224202407222
+  :mean_absolute_error: 0.004677498769079271
+  :kappa_statistic: 0.9906329011911743
+  :false_positives: 19.0
+  :false_negatives: 19.0
+  :confusion_matrix:
+  - - 3897.0
+    - 19.0
+  - - 19.0
+    - 4189.0
+  :degree: 4
+  :cost: 512.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 18.038387740624394
+  :relative_absolute_error: 1.6269166435614206
+  :root_mean_squared_error: 0.09013366080135363
+  :mean_absolute_error: 0.00812407680945347
+  :kappa_statistic: 0.983729963468096
+  :false_positives: 30.0
+  :false_negatives: 36.0
+  :confusion_matrix:
+  - - 3880.0
+    - 36.0
+  - - 30.0
+    - 4178.0
+  :degree: 5
+  :cost: 512.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 2
+  :cost: 4096.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 5.438778541690708
+  :relative_absolute_error: 0.14790151305103824
+  :root_mean_squared_error: 0.0271763212599322
+  :mean_absolute_error: 0.0007385524372230429
+  :kappa_statistic: 0.9985209057698268
+  :false_positives: 0.0
+  :false_negatives: 6.0
+  :confusion_matrix:
+  - - 3910.0
+    - 6.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 4096.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 12.362508326874275
+  :relative_absolute_error: 0.7641578174303643
+  :root_mean_squared_error: 0.061772601199769156
+  :mean_absolute_error: 0.0038158542589857214
+  :kappa_statistic: 0.9923580808552211
+  :false_positives: 13.0
+  :false_negatives: 18.0
+  :confusion_matrix:
+  - - 3898.0
+    - 18.0
+  - - 13.0
+    - 4195.0
+  :degree: 4
+  :cost: 4096.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 17.198927880991683
+  :relative_absolute_error: 1.4790151305103822
+  :root_mean_squared_error: 0.08593907360584258
+  :mean_absolute_error: 0.007385524372230428
+  :kappa_statistic: 0.9852098439860648
+  :false_positives: 30.0
+  :false_negatives: 30.0
+  :confusion_matrix:
+  - - 3886.0
+    - 30.0
+  - - 30.0
+    - 4178.0
+  :degree: 5
+  :cost: 4096.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 2
+  :cost: 32768.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 5.438778541690708
+  :relative_absolute_error: 0.14790151305103824
+  :root_mean_squared_error: 0.0271763212599322
+  :mean_absolute_error: 0.0007385524372230429
+  :kappa_statistic: 0.9985209057698268
+  :false_positives: 0.0
+  :false_negatives: 6.0
+  :confusion_matrix:
+  - - 3910.0
+    - 6.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 32768.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 12.362508326874275
+  :relative_absolute_error: 0.7641578174303643
+  :root_mean_squared_error: 0.061772601199769156
+  :mean_absolute_error: 0.0038158542589857214
+  :kappa_statistic: 0.9923580808552211
+  :false_positives: 13.0
+  :false_negatives: 18.0
+  :confusion_matrix:
+  - - 3898.0
+    - 18.0
+  - - 13.0
+    - 4195.0
+  :degree: 4
+  :cost: 32768.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 17.483226940815918
+  :relative_absolute_error: 1.5283156348607285
+  :root_mean_squared_error: 0.08735965039977805
+  :mean_absolute_error: 0.007631708517971443
+  :kappa_statistic: 0.9847168387856002
+  :false_positives: 31.0
+  :false_negatives: 31.0
+  :confusion_matrix:
+  - - 3885.0
+    - 31.0
+  - - 31.0
+    - 4177.0
+  :degree: 5
+  :cost: 32768.0
+  :kernel: :polynomial
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 177.79621326482211
+  :relative_absolute_error: 158.05741694720953
+  :root_mean_squared_error: 0.8884066474569468
+  :mean_absolute_error: 0.7892663712456918
+  :kappa_statistic: -0.5899282999739218
+  :false_positives: 2874.0
+  :false_negatives: 3538.0
+  :confusion_matrix:
+  - - 378.0
+    - 3538.0
+  - - 2874.0
+    - 1334.0
+  :degree: 3
+  :cost: 3.0517578125e-05
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 177.79621326482211
+  :relative_absolute_error: 158.05741694720953
+  :root_mean_squared_error: 0.8884066474569468
+  :mean_absolute_error: 0.7892663712456918
+  :kappa_statistic: -0.5899282999739218
+  :false_positives: 2874.0
+  :false_negatives: 3538.0
+  :confusion_matrix:
+  - - 378.0
+    - 3538.0
+  - - 2874.0
+    - 1334.0
+  :degree: 3
+  :cost: 0.000244140625
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 78.12428803690253
+  :relative_absolute_error: 30.517012192864225
+  :root_mean_squared_error: 0.3903690384926651
+  :mean_absolute_error: 0.15238798621368785
+  :kappa_statistic: 0.6939349063087403
+  :false_positives: 454.0
+  :false_negatives: 784.0
+  :confusion_matrix:
+  - - 3132.0
+    - 784.0
+  - - 454.0
+    - 3754.0
+  :degree: 3
+  :cost: 0.001953125
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 61.572802366591525
+  :relative_absolute_error: 18.95604392270807
+  :root_mean_squared_error: 0.30766508420264393
+  :mean_absolute_error: 0.09465780403742
+  :kappa_statistic: 0.8095434656980105
+  :false_positives: 119.0
+  :false_negatives: 650.0
+  :confusion_matrix:
+  - - 3266.0
+    - 650.0
+  - - 119.0
+    - 4089.0
+  :degree: 3
+  :cost: 0.015625
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 13.135898147788472
+  :relative_absolute_error: 0.8627588261310565
+  :root_mean_squared_error: 0.06563705165885919
+  :mean_absolute_error: 0.00430822255046775
+  :kappa_statistic: 0.9913720267720239
+  :false_positives: 15.0
+  :false_negatives: 20.0
+  :confusion_matrix:
+  - - 3896.0
+    - 20.0
+  - - 15.0
+    - 4193.0
+  :degree: 3
+  :cost: 0.125
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 5.438778541690708
+  :relative_absolute_error: 0.14790151305103824
+  :root_mean_squared_error: 0.0271763212599322
+  :mean_absolute_error: 0.0007385524372230429
+  :kappa_statistic: 0.9985209057698268
+  :false_positives: 0.0
+  :false_negatives: 6.0
+  :confusion_matrix:
+  - - 3910.0
+    - 6.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 1.0
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 8.0
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 64.0
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 512.0
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 4096.0
+  :kernel: :rbf
+- :dataset: agaricus-lepiota
+  :folds: 10
+  :total_num_instances: 8124
+  :root_relative_squared_error: 0.0
+  :relative_absolute_error: 0.0
+  :root_mean_squared_error: 0.0
+  :mean_absolute_error: 0.0
+  :kappa_statistic: 1.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 3916.0
+    - 0.0
+  - - 0.0
+    - 4208.0
+  :degree: 3
+  :cost: 32768.0
+  :kernel: :rbf

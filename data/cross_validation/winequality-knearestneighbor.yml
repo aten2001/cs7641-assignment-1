@@ -1,0 +1,851 @@
+---
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 118.50213483828244
+  :relative_absolute_error: 70.24441656249532
+  :root_mean_squared_error: 0.571144224375586
+  :mean_absolute_error: 0.32635571250491235
+  :kappa_statistic: 0.2977735259919808
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1325.0
+    - 1059.0
+  - - 1061.0
+    - 3052.0
+  :knn: 1
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 99.29606997020443
+  :relative_absolute_error: 68.99125263570828
+  :root_mean_squared_error: 0.4785768369833219
+  :mean_absolute_error: 0.3205335101687569
+  :kappa_statistic: 0.35198171733356726
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1382.0
+    - 1002.0
+  - - 944.0
+    - 3169.0
+  :knn: 3
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 94.23243429102264
+  :relative_absolute_error: 69.73755230927972
+  :root_mean_squared_error: 0.45417165410240945
+  :mean_absolute_error: 0.32400082007934466
+  :kappa_statistic: 0.37536189858094327
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1375.0
+    - 1009.0
+  - - 850.0
+    - 3263.0
+  :knn: 5
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 91.21279778487931
+  :relative_absolute_error: 69.92437820686183
+  :root_mean_squared_error: 0.4396179251543949
+  :mean_absolute_error: 0.32486881360685205
+  :kappa_statistic: 0.3907096832513307
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1366.0
+    - 1018.0
+  - - 783.0
+    - 3330.0
+  :knn: 7
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 90.10027516987175
+  :relative_absolute_error: 70.77077838313016
+  :root_mean_squared_error: 0.43425590474087306
+  :mean_absolute_error: 0.32880119067122104
+  :kappa_statistic: 0.4000515486841629
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1363.0
+    - 1021.0
+  - - 746.0
+    - 3367.0
+  :knn: 9
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 89.5728069427387
+  :relative_absolute_error: 71.4935295623206
+  :root_mean_squared_error: 0.43171366841846587
+  :mean_absolute_error: 0.33215909422557127
+  :kappa_statistic: 0.4012829229436947
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1348.0
+    - 1036.0
+  - - 721.0
+    - 3392.0
+  :knn: 11
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.98209941745108
+  :relative_absolute_error: 71.89248172717032
+  :root_mean_squared_error: 0.42886663792552465
+  :mean_absolute_error: 0.33401262685330785
+  :kappa_statistic: 0.40669926363722153
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1345.0
+    - 1039.0
+  - - 698.0
+    - 3415.0
+  :knn: 13
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.5502548379969
+  :relative_absolute_error: 72.22328183761219
+  :root_mean_squared_error: 0.4267852784823404
+  :mean_absolute_error: 0.33554952488767203
+  :kappa_statistic: 0.41125922908070656
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1358.0
+    - 1026.0
+  - - 700.0
+    - 3413.0
+  :knn: 15
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.13142529783325
+  :relative_absolute_error: 72.50805933265156
+  :root_mean_squared_error: 0.4247666475674729
+  :mean_absolute_error: 0.336872601750532
+  :kappa_statistic: 0.415458567473088
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1365.0
+    - 1019.0
+  - - 695.0
+    - 3418.0
+  :knn: 17
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.85866088923551
+  :relative_absolute_error: 72.73927782818554
+  :root_mean_squared_error: 0.42345200613254497
+  :mean_absolute_error: 0.33794684338491404
+  :kappa_statistic: 0.41321056044870447
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1352.0
+    - 1032.0
+  - - 685.0
+    - 3428.0
+  :knn: 19
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.4717299295192
+  :relative_absolute_error: 72.77121896715553
+  :root_mean_squared_error: 0.4215871166672568
+  :mean_absolute_error: 0.3380952419862107
+  :kappa_statistic: 0.4219121404640986
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1355.0
+    - 1029.0
+  - - 659.0
+    - 3454.0
+  :knn: 21
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.430496518678
+  :relative_absolute_error: 73.05341244882966
+  :root_mean_squared_error: 0.42138838417618907
+  :mean_absolute_error: 0.33940631351734185
+  :kappa_statistic: 0.4274732181971184
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1361.0
+    - 1023.0
+  - - 648.0
+    - 3465.0
+  :knn: 23
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.16516167536774
+  :relative_absolute_error: 73.09130242643127
+  :root_mean_squared_error: 0.42010955098479497
+  :mean_absolute_error: 0.33958235043589124
+  :kappa_statistic: 0.4313142945433714
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1370.0
+    - 1014.0
+  - - 647.0
+    - 3466.0
+  :knn: 25
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.96926985670564
+  :relative_absolute_error: 73.17332951575817
+  :root_mean_squared_error: 0.4191654120375602
+  :mean_absolute_error: 0.33996344847174964
+  :kappa_statistic: 0.42320239114434866
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1359.0
+    - 1025.0
+  - - 660.0
+    - 3453.0
+  :knn: 27
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.07792859199672
+  :relative_absolute_error: 73.52730316516117
+  :root_mean_squared_error: 0.4196891140719088
+  :mean_absolute_error: 0.3416080108186531
+  :kappa_statistic: 0.42548965672315364
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1367.0
+    - 1017.0
+  - - 663.0
+    - 3450.0
+  :knn: 29
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.96029802954875
+  :relative_absolute_error: 73.62318897590167
+  :root_mean_squared_error: 0.4191221705611957
+  :mean_absolute_error: 0.3420534965044155
+  :kappa_statistic: 0.4276230007120036
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1368.0
+    - 1016.0
+  - - 657.0
+    - 3456.0
+  :knn: 31
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.75224875393394
+  :relative_absolute_error: 73.65522651050041
+  :root_mean_squared_error: 0.4181194363715114
+  :mean_absolute_error: 0.3422023429600135
+  :kappa_statistic: 0.4290954641346045
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1371.0
+    - 1013.0
+  - - 656.0
+    - 3457.0
+  :knn: 33
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.78104992374878
+  :relative_absolute_error: 73.86604675773212
+  :root_mean_squared_error: 0.41825824924452387
+  :mean_absolute_error: 0.3431818142883084
+  :kappa_statistic: 0.424812612418304
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1355.0
+    - 1029.0
+  - - 649.0
+    - 3464.0
+  :knn: 35
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.71867608931964
+  :relative_absolute_error: 73.96507417730282
+  :root_mean_squared_error: 0.41795762634574674
+  :mean_absolute_error: 0.3436418958955457
+  :kappa_statistic: 0.4243371018339005
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1356.0
+    - 1028.0
+  - - 652.0
+    - 3461.0
+  :knn: 37
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.7088887318298
+  :relative_absolute_error: 74.03954725627635
+  :root_mean_squared_error: 0.41791045426138007
+  :mean_absolute_error: 0.34398789798283214
+  :kappa_statistic: 0.4238071524299327
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1362.0
+    - 1022.0
+  - - 662.0
+    - 3451.0
+  :knn: 39
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.64751578935098
+  :relative_absolute_error: 74.0817319426351
+  :root_mean_squared_error: 0.41761465535718684
+  :mean_absolute_error: 0.3441838881276311
+  :kappa_statistic: 0.42014694776962286
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1352.0
+    - 1032.0
+  - - 661.0
+    - 3452.0
+  :knn: 41
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.603530867983
+  :relative_absolute_error: 74.16022059469186
+  :root_mean_squared_error: 0.41740266142278887
+  :mean_absolute_error: 0.34454854657621753
+  :kappa_statistic: 0.4258217479147092
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1348.0
+    - 1036.0
+  - - 636.0
+    - 3477.0
+  :knn: 43
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.56061865186122
+  :relative_absolute_error: 74.21261010431675
+  :root_mean_squared_error: 0.4171958376012048
+  :mean_absolute_error: 0.3447919483521608
+  :kappa_statistic: 0.4240219656611351
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1353.0
+    - 1031.0
+  - - 649.0
+    - 3464.0
+  :knn: 45
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.47836619749225
+  :relative_absolute_error: 74.2602071437408
+  :root_mean_squared_error: 0.41679940580427843
+  :mean_absolute_error: 0.34501308430110195
+  :kappa_statistic: 0.4297769479154355
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1358.0
+    - 1026.0
+  - - 636.0
+    - 3477.0
+  :knn: 47
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.44800850981147
+  :relative_absolute_error: 74.36184529906663
+  :root_mean_squared_error: 0.4166530909888709
+  :mean_absolute_error: 0.3454852953923498
+  :kappa_statistic: 0.42940334983423106
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1360.0
+    - 1024.0
+  - - 640.0
+    - 3473.0
+  :knn: 49
+  :distance_function: :euclidean
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 118.50213483828244
+  :relative_absolute_error: 70.24441656249532
+  :root_mean_squared_error: 0.571144224375586
+  :mean_absolute_error: 0.32635571250491235
+  :kappa_statistic: 0.2977735259919808
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1325.0
+    - 1059.0
+  - - 1061.0
+    - 3052.0
+  :knn: 1
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 99.29606997020443
+  :relative_absolute_error: 68.99125263570828
+  :root_mean_squared_error: 0.4785768369833219
+  :mean_absolute_error: 0.3205335101687569
+  :kappa_statistic: 0.35198171733356726
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1382.0
+    - 1002.0
+  - - 944.0
+    - 3169.0
+  :knn: 3
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 94.23243429102264
+  :relative_absolute_error: 69.73755230927972
+  :root_mean_squared_error: 0.45417165410240945
+  :mean_absolute_error: 0.32400082007934466
+  :kappa_statistic: 0.37536189858094327
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1375.0
+    - 1009.0
+  - - 850.0
+    - 3263.0
+  :knn: 5
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 91.21279778487931
+  :relative_absolute_error: 69.92437820686183
+  :root_mean_squared_error: 0.4396179251543949
+  :mean_absolute_error: 0.32486881360685205
+  :kappa_statistic: 0.3907096832513307
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1366.0
+    - 1018.0
+  - - 783.0
+    - 3330.0
+  :knn: 7
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 90.10027516987175
+  :relative_absolute_error: 70.77077838313016
+  :root_mean_squared_error: 0.43425590474087306
+  :mean_absolute_error: 0.32880119067122104
+  :kappa_statistic: 0.4000515486841629
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1363.0
+    - 1021.0
+  - - 746.0
+    - 3367.0
+  :knn: 9
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 89.5728069427387
+  :relative_absolute_error: 71.4935295623206
+  :root_mean_squared_error: 0.43171366841846587
+  :mean_absolute_error: 0.33215909422557127
+  :kappa_statistic: 0.4012829229436947
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1348.0
+    - 1036.0
+  - - 721.0
+    - 3392.0
+  :knn: 11
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.98209941745108
+  :relative_absolute_error: 71.89248172717032
+  :root_mean_squared_error: 0.42886663792552465
+  :mean_absolute_error: 0.33401262685330785
+  :kappa_statistic: 0.40669926363722153
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1345.0
+    - 1039.0
+  - - 698.0
+    - 3415.0
+  :knn: 13
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.5502548379969
+  :relative_absolute_error: 72.22328183761219
+  :root_mean_squared_error: 0.4267852784823404
+  :mean_absolute_error: 0.33554952488767203
+  :kappa_statistic: 0.41125922908070656
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1358.0
+    - 1026.0
+  - - 700.0
+    - 3413.0
+  :knn: 15
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 88.13142529783325
+  :relative_absolute_error: 72.50805933265156
+  :root_mean_squared_error: 0.4247666475674729
+  :mean_absolute_error: 0.336872601750532
+  :kappa_statistic: 0.415458567473088
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1365.0
+    - 1019.0
+  - - 695.0
+    - 3418.0
+  :knn: 17
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.85866088923551
+  :relative_absolute_error: 72.73927782818554
+  :root_mean_squared_error: 0.42345200613254497
+  :mean_absolute_error: 0.33794684338491404
+  :kappa_statistic: 0.41321056044870447
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1352.0
+    - 1032.0
+  - - 685.0
+    - 3428.0
+  :knn: 19
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.4717299295192
+  :relative_absolute_error: 72.77121896715553
+  :root_mean_squared_error: 0.4215871166672568
+  :mean_absolute_error: 0.3380952419862107
+  :kappa_statistic: 0.4219121404640986
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1355.0
+    - 1029.0
+  - - 659.0
+    - 3454.0
+  :knn: 21
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.430496518678
+  :relative_absolute_error: 73.05341244882966
+  :root_mean_squared_error: 0.42138838417618907
+  :mean_absolute_error: 0.33940631351734185
+  :kappa_statistic: 0.4274732181971184
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1361.0
+    - 1023.0
+  - - 648.0
+    - 3465.0
+  :knn: 23
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.16516167536774
+  :relative_absolute_error: 73.09130242643127
+  :root_mean_squared_error: 0.42010955098479497
+  :mean_absolute_error: 0.33958235043589124
+  :kappa_statistic: 0.4313142945433714
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1370.0
+    - 1014.0
+  - - 647.0
+    - 3466.0
+  :knn: 25
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.96926985670564
+  :relative_absolute_error: 73.17332951575817
+  :root_mean_squared_error: 0.4191654120375602
+  :mean_absolute_error: 0.33996344847174964
+  :kappa_statistic: 0.42320239114434866
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1359.0
+    - 1025.0
+  - - 660.0
+    - 3453.0
+  :knn: 27
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.07792859199672
+  :relative_absolute_error: 73.52730316516117
+  :root_mean_squared_error: 0.4196891140719088
+  :mean_absolute_error: 0.3416080108186531
+  :kappa_statistic: 0.42548965672315364
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1367.0
+    - 1017.0
+  - - 663.0
+    - 3450.0
+  :knn: 29
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.96029802954875
+  :relative_absolute_error: 73.62318897590167
+  :root_mean_squared_error: 0.4191221705611957
+  :mean_absolute_error: 0.3420534965044155
+  :kappa_statistic: 0.4276230007120036
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1368.0
+    - 1016.0
+  - - 657.0
+    - 3456.0
+  :knn: 31
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.75224875393394
+  :relative_absolute_error: 73.65522651050041
+  :root_mean_squared_error: 0.4181194363715114
+  :mean_absolute_error: 0.3422023429600135
+  :kappa_statistic: 0.4290954641346045
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1371.0
+    - 1013.0
+  - - 656.0
+    - 3457.0
+  :knn: 33
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.78104992374878
+  :relative_absolute_error: 73.86604675773212
+  :root_mean_squared_error: 0.41825824924452387
+  :mean_absolute_error: 0.3431818142883084
+  :kappa_statistic: 0.424812612418304
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1355.0
+    - 1029.0
+  - - 649.0
+    - 3464.0
+  :knn: 35
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.71867608931964
+  :relative_absolute_error: 73.96507417730282
+  :root_mean_squared_error: 0.41795762634574674
+  :mean_absolute_error: 0.3436418958955457
+  :kappa_statistic: 0.4243371018339005
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1356.0
+    - 1028.0
+  - - 652.0
+    - 3461.0
+  :knn: 37
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.7088887318298
+  :relative_absolute_error: 74.03954725627635
+  :root_mean_squared_error: 0.41791045426138007
+  :mean_absolute_error: 0.34398789798283214
+  :kappa_statistic: 0.4238071524299327
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1362.0
+    - 1022.0
+  - - 662.0
+    - 3451.0
+  :knn: 39
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.64751578935098
+  :relative_absolute_error: 74.0817319426351
+  :root_mean_squared_error: 0.41761465535718684
+  :mean_absolute_error: 0.3441838881276311
+  :kappa_statistic: 0.42014694776962286
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1352.0
+    - 1032.0
+  - - 661.0
+    - 3452.0
+  :knn: 41
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.603530867983
+  :relative_absolute_error: 74.16022059469186
+  :root_mean_squared_error: 0.41740266142278887
+  :mean_absolute_error: 0.34454854657621753
+  :kappa_statistic: 0.4258217479147092
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1348.0
+    - 1036.0
+  - - 636.0
+    - 3477.0
+  :knn: 43
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.56061865186122
+  :relative_absolute_error: 74.21261010431675
+  :root_mean_squared_error: 0.4171958376012048
+  :mean_absolute_error: 0.3447919483521608
+  :kappa_statistic: 0.4240219656611351
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1353.0
+    - 1031.0
+  - - 649.0
+    - 3464.0
+  :knn: 45
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.47836619749225
+  :relative_absolute_error: 74.2602071437408
+  :root_mean_squared_error: 0.41679940580427843
+  :mean_absolute_error: 0.34501308430110195
+  :kappa_statistic: 0.4297769479154355
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1358.0
+    - 1026.0
+  - - 636.0
+    - 3477.0
+  :knn: 47
+  :distance_function: :manhattan
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 86.44800850981147
+  :relative_absolute_error: 74.36184529906663
+  :root_mean_squared_error: 0.4166530909888709
+  :mean_absolute_error: 0.3454852953923498
+  :kappa_statistic: 0.42940334983423106
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1360.0
+    - 1024.0
+  - - 640.0
+    - 3473.0
+  :knn: 49
+  :distance_function: :manhattan
