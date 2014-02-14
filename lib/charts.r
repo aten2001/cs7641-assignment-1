@@ -19,7 +19,7 @@ plothist <- function(below_average, above_average, column) {
   below_average_counts <- table(below_average[column][,1])
   above_average_counts <- table(above_average[column][,1])
   counts <- combine(above_average_counts, below_average_counts) 
-  barplot(counts, main=paste("Distribution of ", column), col=c('green', 'red'))
+  barplot(counts, main=column, col=c('green', 'red'), cex.main=2, cex.lab=1.5)
 }
 
 # Graph for wine distribution of data
@@ -42,7 +42,7 @@ plotmushroom <- function(poisonous, edible, column) {
   poisonous_counts <- table(poisonous[column][,1])
   edible_counts <- table(edible[column][,1])
   counts <- rbind(poisonous_counts, edible_counts)
-  barplot(counts, col=c("green", "red"), main=column)
+  barplot(counts, col=c("green", "red"), main=column, cex.main=2)
 }
 
 # Graphics for mushroom distribution of data

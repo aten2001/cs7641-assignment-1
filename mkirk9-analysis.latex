@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,oneside]{article}
+\documentclass[12pt,oneside]{article}
 \usepackage{graphicx}
 \usepackage{verbatim}
 \usepackage{color}
@@ -27,74 +27,19 @@ The data that I am using is from the UCI Machine Learning repository. In this se
 
 \subsection*{Mushroom Data Set}
 
-The first data set comes from the Audubon Society Field Guide to North American Mushrooms (1981). In it there are 8124 instances of mushrooms being either poisonous or edible. The attributes extracted in this data set are listed below.
+The first data set comes from the Audubon Society Field Guide to North American Mushrooms (1981). In it there are 8124 instances of mushrooms being either poisonous or edible. There are 22 different attributes that are captured in this data set. Instead of listing them out let's look at what the distribution of each one is. What is intriguing is that the distribution of attributes if mapped in histogram form with 'red' being poisonous and 'green' being edible.
 
-\begin{table}[h]\footnotesize
-  \caption{Mushroom Attribute Summary}
-
-    \begin{tabular}{ | l | p{10cm} | }
-      \hline
-      cap-shape & bell=b, conical=c, convex=x, flat=f,  knobbed=k, sunken=s  \\
-      cap-surface & fibrous=f, grooves=g, scaly=y, smooth=s \\
-      cap-color & brown=n, buff=b, cinnamon=c, gray=g, green=r, pink=p, purple=u, red=e, white=w, yellow=y \\
-      bruises? & bruises=t, no=f \\
-      odor & almond=a, anise=l, creosote=c, fishy=y, foul=f, musty=m, none=n, pungent=p, spicy=s \\
-      gill-attachment & attached=a, descending=d, free=f, notched=n \\
-      gill-spacing & close=c, crowded=w, distant=d  \\
-      gill-size & broad=b,  narrow=n \\
-      gill-color & black=k, brown=n, buff=b, chocolate=h, gray=g,  green=r, orange=o, pink=p, purple=u, red=e,  white=w, yellow=y  \\
-      stalk-shape & enlarging=e, tapering=t \\
-      stalk-root &  bulbous=b, club=c, cup=u, equal=e,  rhizomorphs=z, rooted=r, missing=? \\
-      stalk-surface-above-ring & fibrous=f, scaly=y, silky=k, smooth=s \\
-      stalk-surface-below-ring & fibrous=f, scaly=y, silky=k, smooth=s \\
-      stalk-color-above-ring & brown=n, buff=b, cinnamon=c, gray=g, orange=o,  pink=p, red=e, white=w, yellow=y \\
-      stalk-color-below-ring & brown=n, buff=b, cinnamon=c, gray=g, orange=o,  pink=p, red=e, white=w, yellow=y \\
-      veil-type & partial=p, universal=u \\
-      veil-color & brown=n, orange=o, white=w, yellow=y  \\
-      ring-number & none=n, one=o, two=t \\
-      ring-type & cobwebby=c, evanescent=e, flaring=f, large=l,  none=n, pendant=p, sheathing=s, zone=z \\
-      spore-print-color &  black=k, brown=n, buff=b, chocolate=h, green=r,  orange=o, purple=u, white=w, yellow=y  \\
-      population &  abundant=a, clustered=c, numerous=n,  scattered=s, several=v, solitary=y \\
-      habitat & grasses=g, leaves=l, meadows=m, paths=p,  urban=u, waste=w, woods=d\\
-      \hline
-  \end{tabular}
-\end{table}
-
-What is intriguing is that the distribution of attributes if mapped in histogram form with 'red' being poisonous and 'green' being edible.
+\includegraphics[width=5in]{assets/mushroom_distribution.png}
 
 You can see that there is an obvious attribution of 'odor' to poisonousness. This makes the dataset intriguing and maybe able to actually grep some useful analysis out of.
-
-\includegraphics[scale=0.4]{assets/mushroom_distribution.png}
 
 \subsection*{Wine Data Set}
 
 The wine data set comes from a study done by Paulo Cortez at the University of Minho. This includes two data sets of the red and white variants of 'Vinho Verde' wine. These data sets came with 12 original attributes but we need to pre-process the data to better fit our classification problem. If you remember the problem is about classifying the above average wine and we have two data sets (red and white). To achieve this we added a new attribute 'red' which is simply a binary variable that is either 't' or 'f'. On top of that we took out quality which was in the original data set and used above\_average to denote any wine that received strictly greater than a 5 out of 10. In summary our data looks like this.
 
-\begin{table}[h]\footnotesize
-  \caption{Wine Attribute Summary}
-
-    \begin{tabular}{ | l | p{10cm} | }
-      \hline
-      red & true=t, false=f \\
-      fixed acidity & min=3.8, median=7, max=15.9\\
-      volatile acidity & min=0.08, median=0.29, max=1.58\\
-      citric acid & min=0, median=0.31, max=1.66\\
-      residual sugar & min=0.6, median=3, max=65.8 \\
-      chlorides & min=0.009, median=0.047, max=0.611\\
-      free sulfur dioxide & min=1, median=29, max=289\\
-      total sulfur dioxide & min=6, median=118, max=440\\
-      density & min=0.9871, median=0.9949, max=1.039\\
-      pH & min=2.72, median=3.21, max=4.01 \\
-      sulphates & min=0.22, median=0.51, max=2.0\\
-      alcohol & min=8, median=10.30, max=14.90 \\
-      above\_average (derrived from quality) & true=t, false=f \\
-     \hline
-  \end{tabular}
-\end{table}
-
 Graphically the data doesn't tell us as much as the mushrooms did.
 
-\includegraphics[scale=0.4]{assets/wine_distribution.png}
+\includegraphics[width=5in]{assets/wine_distribution.png}
 
 Now that we know a bit more about the data let's analyze it using some supervized learning methods!
 
@@ -145,7 +90,7 @@ GRAPHIC
 
 What is almost more interesting is the resulting tree that shows that odor is by far the most important attribute etc. This tree is highly useful for someone like myself wanting to go out and find mushrooms and when I found it I got very excited cause it means I can classify mushrooms easier!
 
-\includegraphics{assets/agaricus-lepiota_tree.png}
+\includegraphics[width=5in]{assets/mushroom_tree.png}
 
 Unfortunately our wine data set is yet again not doing great. The data set revolves around a RMSE of 0.5 which is not great. At the lowest there is an RMSE of 0.46 when the confidence is 0.5 and min\_num\_obj is 5. What this signals to me is that the data is extremely noisy because it's relying on the factor of limiting numbers of objects in each leaf.
 
@@ -153,7 +98,7 @@ GRAPHIC
 
 The resulting tree graphic doesn't help much either. The only thing that I can take out of it is that alcoholic content is a big determiner of whether it's a good or bad wine. I suppose that makes sense given the fact that high alcohol wines can be considered less tasty. After that volatile acidity and free sulphur dioxide seem to have some determining on whether the wine is good or not but then things quickly become chaotic at the bottom. The graph is so large that most likely it'll be hard to view this and I recommend you look at it under `./assets/winequality\_tree.png`.
 
-\includegraphics{assets/winequality_tree.png}
+\includegraphics[width=5in]{assets/winequality_tree.png}
 
 Decision trees seem to be very well suited for some problems and not for others. In the case of Wine quality there is a lot of continuous variables that seem to perform poorly. The benefit though of using the J48 / C4.5 tree is that it runs quickly and yields good results fast. I personally think that the best classification of the Mushrooms is the decision tree because it's easy to see what determines what makes a poisonous mushroom which is odor, spore\_print\_color, gill\_size, gill\_spacing, and population! Wine didn't fare as well but it's useful to know that some attributes like alcoholic content are a big determinant.
 

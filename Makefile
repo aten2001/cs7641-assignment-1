@@ -7,7 +7,7 @@ markdown:
 charts:
 	r < ./lib/charts.r --vanilla
 	dot -Tpng ./assets/winequality.dot > ./assets/winequality_tree.png
-	dot -Tpng ./assets/agaricus-lepoita.dot > ./assets/mushroom_tree.png
+	dot -Tpng ./assets/agaricus-lepiota.dot  > ./assets/mushroom_tree.png
 latex:
 	pdflatex mkirk9-analysis.latex
 preview: latex ;
