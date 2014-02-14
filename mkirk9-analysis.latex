@@ -98,13 +98,89 @@ Graphically the data doesn't tell us as much as the mushrooms did.
 
 Now that we know a bit more about the data let's analyze it using some supervized learning methods!
 
-\section{Decision trees with pruning}
-\section{Neural Networks}
+\section{Tools Used}
+
+To accomplish all of these algorithms I used Weka 3.6 and JRuby 1.7. Weka because it simplifies building classification problems and JRuby because it simplifies the development time. There is more about this in the README.
+
+\section{K-Nearest Neighbors}
+K-Nearest Neighbors is one of the simplest machine learning algorithms. Fundamentally you have a data set where given a query point and given the closest `k` points to that point `q` you vote on what is the most common classification. Generally speaking the domain knowledge of K-Nearest Neighbor is what distance function you use, and what K. These are the most defining factors for whether classifications will come out correctly or not.
+
+So given that picking `k` and a distance function is in fact domain knowledge and is in fact a set of possible variables, I chose to test the following models. For `k` I would test each using a 10-fold cross validation for $k \in {x: x = 2n + 1\ and n \in [0, 24]}$ or the odd numbers from 1 to 49. On top of that I wanted to test whether the manhattan distances vs a euclidean distance had any affect on the classification.
+
+What resulted was that out of the hypothesis space chosen there was a reasonable classification on mushrooms and a mediocre one with wine. What happened for the mushroom classification problem is what you'd expect from a KNN problem. As K gets bigger so does the error. This most likely has to do with the curse of dimensionality as well as comparing too many mushrooms to make a classification. While $k=1$ is technically has the lowest root mean squared error I think that $k=3$ is probably the best choice. Mainly because if given a classification problem where you are trying to separate out two classes it's best to at least have a tie breaker.
+
+GRAPHIC
+
+What resulted in the wine data set was less stable but still performed fairly well considering the noise of the data. As $k$ went up the error went down, which signals to me that KNN is not a good solution for classifying wine in this manner. The reason for that is if the error really is going down and $k$ approaches the instance count then we are not really derriving any induction out of it and looking at the entire data set which doesn't solve the problem! It seems that KNN does not model this very well.
+
+GRAPHIC
+
+While KNN is a simplistic algorithm it did exceptionally well with mushroom classification. This is most likely due to the fact that mushrooms that are poisonous are similar in nature. The wine data set did not fare as well because wine classification isn't as similarity based. While a wine might share similar characteristics it may or may not be an above average wine.
+
 \section{Boosting}
+
+The AdaBoost algorithm is really an exceptional tool. Over iterations the distribution updates and the classification gets better and better. Most of the time the downside to AdaBoost is using too many iterations and overfitting the data, but a lot of work has been done with this and shows great performance. AdaBoost doesn't have a lot of tweaks to be had like KNN does, and most of the work can be done purely by setting how many iterations you want to go through.
+
+So I decided to try [10, 100, 500, 1000] which gives a decent hypothesis set of AdaBoost algorithms. Running this against both data sets yields extremely good answers in a quick period of time. Again the mushroom data set worked extremely well against this algorithm. It went from a 0.22 RMSE to 0.02 between 10 and 100 iterations and then quickly dropped off after that.
+
+GRAPHIC
+
+This is indicative of the underlining distribution that we observed earlier where there is a definite pattern to the attributes of the mushrooms.
+
+On the other hand the wine data set didn't improve much over iterations. Between 10 and 100 iterations it only dropped 0.006 RMSE from 0.428 to 0.422. At 500 it seems to have found it's asymptope at 0.420. This is very similar to the fact that the distribution we observed on the wine data set is noisy and doesn't have as simple as a pattern as the mushroom dataset does.
+
+GRAPHIC
+
+Overall though the AdaBoost algorithm is exceptional because unlike the KNN algorithm it runs fast. This is probably the quickest one to run on my Mac Book Air and yielded really good results. 
+
+\section{Decision trees with pruning}
+
+Decision trees are one of the most beautiful algorithm because it takes the form of 20 questions. On top of that it is probably the most intuitive representation of problems. The added benefit of these trees is that implicitly you can determine what is the most `important` variable out of your data set by looking at the first split in the tree and so forth. Decision trees have the unfortunate problem though of sometimes overfitting so that's why we use pruning.
+
+To accomplish analysing our two data sets using decision trees I used the Weka J48 tree which is a C4.5 implementation in Java. The hypothesis set in this case is more complex than KNN or AdaBoost and takes the form of two questions what are the minimum number of objects in each leaf and what is the confidence factor. For this I've decided to use $confidence \in {0.05, 0.15, 0.25, 0.35, 0.45}$ and $min_num_obj \in [2,5]$. 
+
+Unsurprisingly the mushroom data does well yet again but what's interesting is that for the most part whether the confidence level is moved, or min\_num\_obj is moved around the RMSE stays pretty much the same. That means that most likely that the mushrooms should be classified this way! It is a highly stable solution and no matter what you throw at it does well. 
+
+GRAPHIC
+
+What is almost more interesting is the resulting tree that shows that odor is by far the most important attribute etc. This tree is highly useful for someone like myself wanting to go out and find mushrooms and when I found it I got very excited cause it means I can classify mushrooms easier!
+
+\includegraphics{assets/agaricus-lepiota_tree.png}
+
+Unfortunately our wine data set is yet again not doing great. The data set revolves around a RMSE of 0.5 which is not great. At the lowest there is an RMSE of 0.46 when the confidence is 0.5 and min\_num\_obj is 5. What this signals to me is that the data is extremely noisy because it's relying on the factor of limiting numbers of objects in each leaf.
+
+GRAPHIC
+
+The resulting tree graphic doesn't help much either. The only thing that I can take out of it is that alcoholic content is a big determiner of whether it's a good or bad wine. I suppose that makes sense given the fact that high alcohol wines can be considered less tasty. After that volatile acidity and free sulphur dioxide seem to have some determining on whether the wine is good or not but then things quickly become chaotic at the bottom. The graph is so large that most likely it'll be hard to view this and I recommend you look at it under `./assets/winequality\_tree.png`.
+
+\includegraphics{assets/winequality_tree.png}
+
+Decision trees seem to be very well suited for some problems and not for others. In the case of Wine quality there is a lot of continuous variables that seem to perform poorly. The benefit though of using the J48 / C4.5 tree is that it runs quickly and yields good results fast. I personally think that the best classification of the Mushrooms is the decision tree because it's easy to see what determines what makes a poisonous mushroom which is odor, spore\_print\_color, gill\_size, gill\_spacing, and population! Wine didn't fare as well but it's useful to know that some attributes like alcoholic content are a big determinant.
+
+\section{Neural Networks}
+
+Neural Networks are a very deep subject ranging from perceptrons to cyclic RBF networks. In a lot of cases though a feed foward network or multilayer perceptron can achieve great results. Unfortunately this is where I had the toughest time in terms of analysis due to the implementation of Weka's multilayer perceptron package. Since we are dealing with predominantly nominal variables being expanded out into binary variables means that we had around 120 inputs for mushrooms and only two outputs. Using the back propagation algorithm this is very slow to compute, so slow in fact that I had to dial back analysis to only concern epochs. Even then there wasn't a lot of opportunity to analyze different methods due to the massive complexity of the network.
+
+Using an algorithm like RProp would have probably yielded faster results.
+
+Really the neural network didn't perform well in either data set. I think the reason why is because on the input layer you have around 120 inputs due to nominal variables being exploded into binary attributes and then only 2 output nodes. Usually neural networks are good at outputting lots of nodes and I think that it would have been better suited for a problem like classifying across many different categories like frequency of letters to languages.
+
+The mushroom data set started at a RMSE of 0.1 and went down to 0.04 which was not much of a change really over epochs of training.
+
+GRAPHIC
+
+The complexity of the neural network really doesn't add anything to the wine classification problem either since it hovers around 0.42 RMSE. Surprisingly this is a good RMSE considering the other classifications but still not exceptional. One way we could improve this would be to split the quality into buckets like it was before (1-10) and assign each quality to an output node. That would probably improve the RMSE by better classifying wines into qualities.
+
+GRAPHIC
+
 \section{Support Vector Machines}
-\msection{K-Nearest Neighbors}
 
 \section{Conclusion}
-Write your conclusion here.
+
+Overall the question of whether I can go out into the woods and correctly classify mushrooms is answered! Yes! Using the tree that was built using J48 I can easily determine whether a mushroom is poisonous or not given a few simple questions. And if I'm not sure I can always look it up just to double check. The real benefit though is that now I know what makes a poisonous mushroom.
+
+Unfortunatly I can't say the same thing for determining the above average wine. But then again the question is maybe one that requires more data and more research to properly answer. Wines are numerous but not as diverse as mushrooms are. A good quality wine doesn't have a drastically different chemical composition than a bad wine. Though I did learn that alcohol volume of a wine does make a difference and that sulphur also impacts wine quality. Whether or not I'll become a sommolier is up to question but I will enjoy revisiting this problem in the future to better classify wines.
+
+Overall supervised learning methods work exceptionally well for data sets that have an underlining distribution that we can infer from the past. It seems that the cursory data analysis we did at the beginning made a big difference as to whether the problem itself was solveable or not.
 
 \end{document}

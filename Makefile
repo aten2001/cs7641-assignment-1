@@ -6,6 +6,8 @@ markdown:
 	markdown ASSIGNMENT.md > $(assignment_output) 
 charts:
 	r < ./lib/charts.r --vanilla
+	dot -Tpng ./assets/winequality.dot > ./assets/winequality_tree.png
+	dot -Tpng ./assets/agaricus-lepoita.dot > ./assets/mushroom_tree.png
 latex:
 	pdflatex mkirk9-analysis.latex
 preview: latex ;

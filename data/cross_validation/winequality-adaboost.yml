@@ -71,3 +71,39 @@
   weight_threshold: 100
   use_resampling: false
   num_iterations: 1000
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.32440414196809
+  :relative_absolute_error: 72.55055881617739
+  :root_mean_squared_error: 0.4208770512091431
+  :mean_absolute_error: 0.33707005444365573
+  :kappa_statistic: 0.4407772543971885
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1460.0
+    - 924.0
+  - - 736.0
+    - 3377.0
+  weight_threshold: 100
+  use_resampling: false
+  num_iterations: 5000
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 87.68038104645643
+  :relative_absolute_error: 72.06023969663323
+  :root_mean_squared_error: 0.4225927515489477
+  :mean_absolute_error: 0.33479203074519925
+  :kappa_statistic: 0.43122253559659646
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1442.0
+    - 942.0
+  - - 745.0
+    - 3368.0
+  weight_threshold: 100
+  use_resampling: false
+  num_iterations: 10000

@@ -13,8 +13,7 @@ class Analysis
   def initialize(file_hash, algorithm = nil)
     @files = file_hash.keys
     @instances = file_hash.map do |file, class_name|
-      instances = CSVFile.load(file)
-      instances.class = instances.enumerate_attributes.detect {|a| a.name == class_name}
+      instances = CSVFile.load(file, class_name)
       instances
     end
   end
@@ -41,7 +40,8 @@ class Analysis
 end
 
 analysis = Analysis.new({
-  './data/wine_data/winequality.csv' => 'above_average'
+  './data/wine_data/winequality.csv' => 'above_average',
+  './data/agaricus-lepiota/agaricus-lepiota.csv' => 'class'
 })
 
 analysis.run_all!

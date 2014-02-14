@@ -3,6 +3,10 @@ java_import 'weka.classifiers.Classifier'
 java_import 'weka.core.Utils'
 
 module CrossValidation
+  def build!
+    @classifier.build_classifier(@instances)
+  end
+
   def cross_validation
     @folds ||= 10
     evaluation = Evaluation.new(@instances)
