@@ -7,13 +7,14 @@ markdown:
 charts:
 	r < ./lib/charts.r --vanilla
 latex:
-	pdflatex kirkmj-analysis.latex
+	pdflatex mkirk9-analysis.latex
 preview: latex ;
-	open kirkmj-analysis.pdf
+	open mkirk9-analysis.pdf
 preview_charts: charts ;
 	open assets/*.png
 clean:
 	rm $(assignment_output) 
-	find . -name kirkmj\* | grep -v latex | xargs rm
+	find . -name mkirk9\* | grep -v latex | xargs rm
 setup_jruby:
-	tar -xzvf $(jruby_path)
+	./bin/setup_jruby.sh
+	source ./bin/jruby_source.sh
