@@ -1,9 +1,6 @@
-assignment_output = docs/assignment.html
 jruby_path = vendor/jruby-bin-1.7.10.tar.gz
 all: charts ; latex ; clean ; zip
 	echo 'Finished build'
-markdown:
-	markdown ASSIGNMENT.md > $(assignment_output) 
 charts:
 	mkdir -p assets
 	r < ./lib/charts.r --vanilla
@@ -17,8 +14,7 @@ preview: latex ;
 preview_charts: charts ;
 	open assets/*.png
 clean:
-	rm $(assignment_output) 
-	find . -name mkirk9\* | grep -v latex | xargs rm
+	find . -name mkirk9\* | grep -v latex | xargs rm	
 	rm -r assets
 setup_jruby:
 	./bin/setup_jruby.sh
