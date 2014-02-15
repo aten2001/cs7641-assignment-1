@@ -14,7 +14,7 @@ preview: latex ;
 preview_charts: charts ;
 	open assets/*.png
 clean:
-	find . -name mkirk9\* | grep -v latex | xargs rm	
+	find . -name mkirk9\* | grep -v latex | grep -v pdf |  xargs rm	
 	rm -r assets
 setup_jruby:
 	./bin/setup_jruby.sh
