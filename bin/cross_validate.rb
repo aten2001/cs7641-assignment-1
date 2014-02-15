@@ -1,8 +1,5 @@
 require_relative '../config/bootstrap'
 
-mushrooms = './data/agaricus-lepiota/agaricus-lepiota.csv'
-wine = './data/wine_data/winequality.csv'
-
 class Analysis
   if ARGV.first.nil?
     ALGORITHMS = [KNearestNeighbor, SVM, J48Tree, AdaBoost, NeuralNetwork]
@@ -39,8 +36,12 @@ class Analysis
   end
 end
 
+mushrooms = './data/agaricus-lepiota/agaricus-lepiota.csv'
+wine = './data/wine_data/winequality.csv'
+
 analysis = Analysis.new({
-  './data/wine_data/winequality.csv' => 'above_average',
+  wine => 'above_average',
+  mushrooms => 'class'
 })
 
 analysis.run_all!
