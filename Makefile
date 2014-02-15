@@ -20,4 +20,4 @@ setup_jruby:
 	./bin/setup_jruby.sh
 	source ./bin/jruby_source.sh
 zip:	
-	tar -czvf ../mkirk9.tar.gz .
+	git archive HEAD | gzip > ../mkirk9.tar.gz	
