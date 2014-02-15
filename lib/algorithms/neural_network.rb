@@ -27,4 +27,16 @@ class NeuralNetwork
       yield ann
     end
   end
+
+  def self.important_parts(cross_validation_data)
+    yml = YAML::load_file(cross_validation_data)
+
+    CSV.open("./data/supporting/#{File.basename(cross_validation_data, '.yml')}.csv", 'wb') do |csv|
+      csv << %w[epochs rmse]
+
+      yml.each do |cv|
+        csv << [cv.fetch(:training_time), cv.fetch(:root_mean_squared_error)]
+      end
+    end
+  end
 end

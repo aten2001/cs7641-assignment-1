@@ -41,7 +41,6 @@ end
 
 analysis = Analysis.new({
   './data/wine_data/winequality.csv' => 'above_average',
-  './data/agaricus-lepiota/agaricus-lepiota.csv' => 'class'
 })
 
 analysis.run_all!

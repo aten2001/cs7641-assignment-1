@@ -4,3 +4,4 @@ docs/*
 *.pdf
 .DS_Store
 vendor/jruby-1.7.10/*
+assets/

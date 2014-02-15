@@ -13,6 +13,7 @@ class SVM
   def initialize(instances)
     @classifier = LibSVM.new
     @classifier.cache_size = 100
+    @classifier.shrinking = false
     @instances = instances
   end
 
@@ -34,22 +35,29 @@ class SVM
   end
 
   def each(&block)
-    [:linear, :polynomial, :rbf].each do |kernel|
-      -15.step(15, 3).each do |c_exp|
+    [:rbf].each do |kernel|
+      -7.step(7, 3).each do |c_exp|
         svm = SVM.new(@instances)
         svm.kernel = kernel
         svm.cost = 2 ** c_exp
-
-        if kernel == :polynomial
-          (2..5).each do |degree|
-            svm.degree = degree
-            yield svm
-          end
-        else
-          yield svm
-        end
+        yield svm
       end
     end
   end
 
+  def self.important_parts(cross_validation_data)
+    yml = YAML::load_file(cross_validation_data)
+
+    CSV.open("./data/supporting/#{File.basename(cross_validation_data, '.yml')}.csv", 'wb') do |csv|
+      csv << %w[kernel C degree rmse]
+      yml.each do |cv|
+        csv << [
+          cv.fetch(:kernel),
+          cv.fetch(:cost),
+          cv.fetch(:degree),
+          cv.fetch(:root_mean_squared_error)
+        ]
+      end
+    end
+  end
 end

@@ -1,0 +1,91 @@
+---
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 125.68315583383007
+  :relative_absolute_error: 78.97942635373767
+  :root_mean_squared_error: 0.6057545600655206
+  :mean_absolute_error: 0.3669385870401724
+  :kappa_statistic: 0.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 0.0
+    - 2384.0
+  - - 0.0
+    - 4113.0
+  :degree: 3
+  :cost: 0.0078125
+  :kernel: :rbf
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 125.68315583383007
+  :relative_absolute_error: 78.97942635373767
+  :root_mean_squared_error: 0.6057545600655206
+  :mean_absolute_error: 0.3669385870401724
+  :kappa_statistic: 0.0
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 0.0
+    - 2384.0
+  - - 0.0
+    - 4113.0
+  :degree: 3
+  :cost: 0.0625
+  :kernel: :rbf
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 121.61049232315492
+  :relative_absolute_error: 73.94382534460674
+  :root_mean_squared_error: 0.5861255614392793
+  :mean_absolute_error: 0.34354317377251037
+  :kappa_statistic: 0.16879279902254238
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 642.0
+    - 1742.0
+  - - 490.0
+    - 3623.0
+  :degree: 3
+  :cost: 0.5
+  :kernel: :rbf
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 123.31482656823614
+  :relative_absolute_error: 76.03094944707549
+  :root_mean_squared_error: 0.5943399337947822
+  :mean_absolute_error: 0.3532399569031861
+  :kappa_statistic: 0.22288654314425277
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1114.0
+    - 1270.0
+  - - 1025.0
+    - 3088.0
+  :degree: 3
+  :cost: 4.0
+  :kernel: :rbf
+- :dataset: winequality
+  :folds: 10
+  :total_num_instances: 6497
+  :root_relative_squared_error: 125.94647721160506
+  :relative_absolute_error: 79.31071589381207
+  :root_mean_squared_error: 0.6070236889658231
+  :mean_absolute_error: 0.36847775896567647
+  :kappa_statistic: 0.19767838814105873
+  :false_positives: 0.0
+  :false_negatives: 0.0
+  :confusion_matrix:
+  - - 1122.0
+    - 1262.0
+  - - 1132.0
+    - 2981.0
+  :degree: 3
+  :cost: 32.0
+  :kernel: :rbf
